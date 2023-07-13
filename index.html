@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oil price Predictor</title>
+</head>
+<body>
+
+    <h1>oil price Predictor</h1>
+    {% if re %}
+        <p>{{ re }}</p>
+    {% endif %}
+    <form method="post" action="/predict">
+        <label>ENTER HOW MANY DAY DO YOU WANT PREDICT the price</label><br>
+        <input type="text" name="n"><br><br>
+
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>
